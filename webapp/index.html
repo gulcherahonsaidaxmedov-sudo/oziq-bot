@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  >
+
+  <title>Tegen</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-decor"></div>
+
+    <div class="header-content">
+      <div>
+        <div class="header-title">🛒 Tegen</div>
+        <div class="header-subtitle">Siz uchun eng yaxshi mahsulotlar</div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- AKSIYA -->
+  <section id="promo" class="promo hidden">
+    <div class="promo-track" id="promo-track"></div>
+    <div class="promo-dots" id="promo-dots"></div>
+  </section>
+
+
+  <!-- QIDIRUV -->
+  <section class="order-search">
+
+    <div class="search-row">
+
+      <span class="search-symbol">⌕</span>
+
+      <input
+        type="text"
+        id="search-input"
+        autocomplete="off"
+        placeholder="Mahsulot yoki buyurtma raqami"
+      >
+
+      <button
+        id="search-btn"
+        class="search-icon"
+        type="button"
+        aria-label="Qidirish"
+      >
+        🔍
+      </button>
+
+    </div>
+
+    <div id="search-hint" class="search-hint">
+      Mahsulot nomini yozing yoki buyurtma raqamini kiriting
+    </div>
+
+    <div id="search-result" class="search-result hidden"></div>
+
+  </section>
+
+
+  <!-- KATEGORIYALAR -->
+  <section class="categories-section">
+    <div id="categories" class="categories"></div>
+  </section>
+
+
+  <!-- MAHSULOTLAR -->
+  <main id="products" class="products"></main>
+
+
+  <!-- SAVAT -->
+  <section id="cart-list" class="cart-list hidden"></section>
+
+
+  <!-- PASTKI SAVAT -->
+  <div id="cart-bar" class="cart-bar hidden">
+
+    <div class="cart-summary-wrap">
+      <div class="cart-summary-label">Savat</div>
+      <div id="cart-summary"></div>
+    </div>
+
+    <button id="checkout-btn" type="button">
+      Buyurtma berish
+      <span>→</span>
+    </button>
+
+  </div>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
